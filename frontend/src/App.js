@@ -1,22 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import logo from "./logo.svg";
  
 function App() {
-  const handleLogout = () => {
-    alert("Logged out successfully!");
-    window.location.reload();
+ 
+  const enterWebsite = () => {
+    alert("Welcome to the Website!");
+    // You can replace this URL with your own website later
+    window.location.href = "https://www.google.com";
   };
  
   return (
     <div className="App">
       <header className="App-header">
+ 
         <img
           src={logo}
-          className="App-logo"
-          alt="logo"
+          alt="Logo"
+          style={{ width: "120px", marginBottom: "20px" }}
         />
  
-        <h1>Welcome to My CI/CD Pipeline Project</h1>
+        <h1>React + FastAPI CI/CD Pipeline</h1>
  
         <h2>Deployed using Jenkins + Docker + GitHub</h2>
  
@@ -37,10 +41,10 @@ function App() {
         >
           Enter Website
         </button>
+ 
       </header>
     </div>
   );
 }
  
 export default App;
- 
