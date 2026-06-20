@@ -23,7 +23,7 @@ function App() {
         <p>Version 1.0</p>
  
         <button
-          onClick={handleLogout}
+          onClick={enterWebsite}
           style={{
             padding: "10px 20px",
             fontSize: "18px",
@@ -35,7 +35,7 @@ function App() {
             marginTop: "20px"
           }}
         >
-          Logout
+          Enter Website
         </button>
       </header>
     </div>
